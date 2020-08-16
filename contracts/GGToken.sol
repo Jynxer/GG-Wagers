@@ -33,6 +33,7 @@ contract GGToken {
 
 	//Constructor
 	constructor(uint256 _initialSupply) public {
+		//Set initial supply
 		balanceOf[msg.sender] = _initialSupply;
 		totalSupply = _initialSupply;
 	}

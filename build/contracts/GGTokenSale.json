@@ -1,0 +1,182 @@
+{
+  "contractName": "GGTokenSale",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    }
+  ],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3fe6080604052600080fdfea165627a7a723058200161a98e16280a65c93c8250d3df0d4e2f095d37e9d9a9803e06cc0d7d44af370029",
+  "deployedBytecode": "0x6080604052600080fdfea165627a7a723058200161a98e16280a65c93c8250d3df0d4e2f095d37e9d9a9803e06cc0d7d44af370029",
+  "sourceMap": "34:108:1:-;;;59:80;8:9:-1;5:2;;;30:1;27;20:12;5:2;59:80:1;34:108;;;;;;",
+  "deployedSourceMap": "34:108:1:-;;;;;",
+  "source": "pragma solidity >=0.4.21 <0.7.0;\n\ncontract GGTokenSale {\n\n\tconstructor() public {\n\t\t//Assign an admin\n\t\t//Token Contract\n\t\t//Token Price\n\t}\n\n}",
+  "sourcePath": "/Users/jordanrowley/Desktop/token_sale/contracts/GGTokenSale.sol",
+  "ast": {
+    "absolutePath": "/Users/jordanrowley/Desktop/token_sale/contracts/GGTokenSale.sol",
+    "exportedSymbols": {
+      "GGTokenSale": [
+        192
+      ]
+    },
+    "id": 193,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 187,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".21",
+          "<",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 192,
+        "linearizedBaseContracts": [
+          192
+        ],
+        "name": "GGTokenSale",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 190,
+              "nodeType": "Block",
+              "src": "80:59:1",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 191,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 188,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "70:2:1"
+            },
+            "returnParameters": {
+              "id": 189,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "80:0:1"
+            },
+            "scope": 192,
+            "src": "59:80:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 193,
+        "src": "34:108:1"
+      }
+    ],
+    "src": "0:142:1"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/jordanrowley/Desktop/token_sale/contracts/GGTokenSale.sol",
+    "exportedSymbols": {
+      "GGTokenSale": [
+        192
+      ]
+    },
+    "id": 193,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 187,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.4",
+          ".21",
+          "<",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:32:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 192,
+        "linearizedBaseContracts": [
+          192
+        ],
+        "name": "GGTokenSale",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 190,
+              "nodeType": "Block",
+              "src": "80:59:1",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 191,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 188,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "70:2:1"
+            },
+            "returnParameters": {
+              "id": 189,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "80:0:1"
+            },
+            "scope": 192,
+            "src": "59:80:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 193,
+        "src": "34:108:1"
+      }
+    ],
+    "src": "0:142:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.0+commit.1d4f565a.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.0.1",
+  "updatedAt": "2020-08-16T17:00:54.493Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
