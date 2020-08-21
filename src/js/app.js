@@ -5,7 +5,7 @@ App = {
 	loading: false,
 	tokenPrice: 1000000000000000,
 	tokensSold: 0,
-	tokensAvailable: 75000000,
+	tokensAvailable: 10000000,
 
 	init: function() {
 		console.log("App initialised...");
@@ -22,7 +22,14 @@ App = {
 			App.web3Provider = new Web3.providers.HttpProvider('http://localhost:7545');
 			web3 = new Web3(App.web3Provider);
 		}
-		return App.initContracts();
+		return App.enableUser();
+	},
+
+	enableUser: async function() {
+		const accounts = await ethereum.enable();
+    	const account = accounts[0];
+    	App.account = account;
+    	return App.initContracts();
 	},
 
 	initContracts: function() {
