@@ -3,9 +3,9 @@ App = {
 	contracts: {},
 	account: '0x0',
 	loading: false,
-	tokenPrice: 1000000000000000,
+	tokenPrice: 100000000000000,
 	tokensSold: 0,
-	tokensAvailable: 10000000,
+	tokensAvailable: 10000,
 
 	init: function() {
 		console.log("App initialised...");
@@ -22,14 +22,7 @@ App = {
 			App.web3Provider = new Web3.providers.HttpProvider('http://localhost:7545');
 			web3 = new Web3(App.web3Provider);
 		}
-		return App.enableUser();
-	},
-
-	enableUser: async function() {
-		const accounts = await ethereum.enable();
-    	const account = accounts[0];
-    	App.account = account;
-    	return App.initContracts();
+		return App.initContracts();
 	},
 
 	initContracts: function() {
@@ -37,14 +30,14 @@ App = {
 			App.contracts.GGTokenSale = TruffleContract(ggTokenSale);
 			App.contracts.GGTokenSale.setProvider(App.web3Provider);
 			App.contracts.GGTokenSale.deployed().then(function(ggTokenSale) {
-				console.log("GG Token Sale Address:" , ggTokenSale.address);
+				//console.log("GG Token Sale Address:" , ggTokenSale.address);
 			})
 		}).done(function() {
 			$.getJSON("GGToken.json", function(ggToken) {
 				App.contracts.GGToken = TruffleContract(ggToken);
 				App.contracts.GGToken.setProvider(App.web3Provider);
 				App.contracts.GGToken.deployed().then(function(ggToken) {
-					console.log("GG Token Address:" , ggToken.address);
+					//console.log("GG Token Address:" , ggToken.address);
 				});
 				App.listenForEvents();
 				return App.render();

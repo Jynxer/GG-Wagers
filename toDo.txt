@@ -1,0 +1,6 @@
+To Do:
+
+1. Make sure coins are easy to transfer from one place to another.
+2. Build an online version of pong where both players have a wallet address.
+3. Build smart contract to host wager.
+4. Make it presentable.
