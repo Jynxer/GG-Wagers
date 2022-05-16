@@ -1,0 +1,39 @@
+#vantaNet {
+	position: absolute;
+	display: block;
+	min-width: 100%;
+	min-height: 100vh;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+}
+
+h1 {
+	color: white;
+}
+
+body {
+	color: white;
+}
+
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #252525 !important;
+}
+
+#logo {
+  width: 140px;
+  height: 100px;
+  top: 18px;
+  left: 10px;
+}
+
+.vertical-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 30%;
+    width: 50%;
+    margin: -15% 0 0 -25%;
+}
